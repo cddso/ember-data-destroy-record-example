@@ -1,0 +1,19 @@
+
+<table>
+  <thead>
+    <tr>
+      <th>Address</th>
+      <th>User</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each this.model as |address|}}
+      <tr>
+        <td>{{address.name}}</td>
+        <td>{{this.formatUserName address}}</td>
+        <td><button type="button" {{on "click" (fn this.removeAddress address)}}>Delete</button></td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>

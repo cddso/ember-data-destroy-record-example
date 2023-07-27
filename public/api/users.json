@@ -1,0 +1,41 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "type": "user",
+      "attributes": {
+        "name": "Chris"
+      },
+      "relationships": {
+        "addresses": {
+          "data": [
+            {
+              "id": "1",
+              "type": "address"
+            },
+            {
+              "id": "2",
+              "type": "address"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "included": [
+    {
+      "id": "1",
+      "type": "address",
+      "attributes": {
+        "name": "Home"
+      }
+    },
+    {
+      "id": "2",
+      "type": "address",
+      "attributes": {
+        "name": "Work"
+      }
+    }
+  ]
+}
